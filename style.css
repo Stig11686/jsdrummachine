@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Nova Mono';
+
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+
+
+
+.pads {
+    width: 100%;
+    display: flex;
+    
+}
+
+.pads > div {
+    height: 10rem;
+    width: 10rem;
+    flex: 1;
+}
+
+.pad1 {
+    background: #603291;
+}
+
+.pad2 {
+    background: #ff2ac1;
+}
+
+.pad3 {
+    background: #2cde12;
+}
+
+.pad4 {
+    background: #aeae00;
+}
+
+.pad5 {
+    background: #b37211;
+}
+
+.pad6 {
+    background: #400000;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual > div {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
